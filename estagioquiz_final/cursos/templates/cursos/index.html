@@ -1,0 +1,141 @@
+{% extends "cursos/base.html" %}
+{% load static %}
+
+{% block title %}CEFET-MG{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cursos/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'cursos/css/chatbot.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="imagem-principal">
+    <img src="{% static 'cursos/imagens/cefet_frente.png' %}" alt="CEFET-MG">
+</section>
+
+<div class="container-colunas">
+    <div class="coluna">
+        <section class="sobre">
+
+
+            <div class="texto-sobre">
+
+                <h2>O que é o CEFET-MG?</h2>
+
+                <p>
+                    O Centro Federal de Educação Tecnológica de Minas Gerais
+                    (CEFET-MG) é uma instituição pública federal reconhecida
+                    pela excelência no ensino técnico e tecnológico.
+                </p>
+
+                <p>
+                    O CEFET oferece cursos técnicos integrados ao ensino médio,
+                    graduação, pós-graduação e diversos projetos de pesquisa
+                    e extensão.
+                </p>
+
+                <p>
+                    Entre os cursos técnicos disponiveis no Campus de Varginha estão:
+                    Informática, Edificações e Mecatrônica, áreas que
+                    preparam os estudantes para o mercado de trabalho
+                    e para universidades.
+                </p>
+
+                <p>
+                    Além das aulas, os alunos podem participar de
+                    olimpíadas científicas, monitorias, estágios,
+                    iniciação científica e projetos tecnológicos.
+                </p>
+
+            </div>
+
+        </section>
+    </div>   
+        
+    <div class="coluna">    
+        <section class="agrega">
+
+            <div class="texto-agrega">
+
+                <h2>O que o CEFET agrega na sua vida acadêmica?</h2>
+
+                <p>
+                    Estudar no CEFET-MG vai muito além de assistir às aulas. Aqui,
+                    você desenvolve autonomia, pensamento crítico e contato direto
+                    com a prática profissional desde o ensino técnico.
+                </p>
+
+                <p>
+                    O convívio com professores experientes, colegas de diferentes
+                    realidades e projetos reais de pesquisa e extensão amplia sua
+                    visão de mundo e te prepara não só para o mercado de trabalho,
+                    mas para os desafios da vida acadêmica e pessoal.
+                </p>
+
+                <p>
+                    É um ambiente que estimula a curiosidade, valoriza a iniciativa
+                    e abre portas: muitos egressos do CEFET seguem para as melhores
+                    universidades do país ou ingressam direto no mercado, já com
+                    experiência prática consolidada.
+                </p>
+
+            </div>
+            
+        </section>
+    </div>    
+    
+</div>
+
+<section class="imagem-principal">
+    <img src="{% static 'cursos/imagens/mostra.png' %}" alt="CEFET-MG">
+</section>
+
+<section class="mostra-cursos">
+
+    <div class="texto-mostra">
+
+        <h2>O que é a Mostra de Cursos?</h2>
+
+        <p>
+            A Mostra de Cursos é o evento anual em que o CEFET-MG Campus
+            Varginha abre suas portas para que estudantes, pais e a
+            comunidade conheçam de perto a estrutura, os laboratórios e
+            as atividades de cada curso técnico oferecido.
+        </p>
+
+        <p>
+            Durante a Mostra, alunos e professores apresentam projetos
+            desenvolvidos em sala de aula, experimentos práticos e
+            demonstrações das áreas de Informática, Edificações e
+            Mecatrônica, dando a chance de vivenciar, mesmo que por um
+            dia, a rotina de quem estuda no CEFET.
+        </p>
+
+        <p>
+            É a oportunidade ideal para quem está em dúvida sobre qual
+            curso técnico seguir: aqui você conversa com alunos atuais,
+            tira dúvidas com a coordenação e descobre qual área combina
+            mais com o seu perfil antes de fazer sua escolha.
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<section class="video-section">
+    <h2>Conheça o CEFET-MG</h2>
+    <div class="video-container">
+        <p>Conheça os cursos, projetos e laboratórios navegando pelo site.(conteudos futuros)</p>
+    </div>
+</section>
+
+{% include "cursos/components/chatbot.html" %}
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'cursos/js/chatbot.js' %}"></script>
+{% endblock %}
