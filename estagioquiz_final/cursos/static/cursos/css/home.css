@@ -1,0 +1,170 @@
+.imagem-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sobre,
+.agrega,
+.mostra-cursos {
+    padding: 60px 10%;
+}
+
+.texto-sobre,
+.texto-agrega,
+.texto-mostra {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.texto-sobre h2,
+.texto-agrega h2,
+.texto-mostra h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.texto-sobre p,
+.texto-agrega p,
+.texto-mostra p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.video-container video {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-colunas {
+  display: flex;
+  gap: 20px;
+}
+
+.coluna {
+  flex: 1; 
+}
+
+@media (max-width: 768px) {
+
+    .imagem-principal {
+        padding: 0 15px;
+    }
+
+    .texto-sobre h2,
+    .texto-agrega h2,
+    .texto-mostra h2 {
+        font-size: 28px;
+    }
+
+    .texto-sobre p,
+    .texto-agrega p,
+    .texto-mostra p {
+        font-size: 18px;
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container-colunas {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .sobre,
+    .agrega,
+    .mostra-cursos {
+        padding: 38px 18px;
+    }
+
+    .imagem-principal {
+        padding: 15px 14px 0;
+    }
+
+    .imagem-principal img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .texto-sobre,
+    .texto-agrega,
+    .texto-mostra {
+        width: 100%;
+        text-align: left;
+    }
+
+    .texto-sobre h2,
+    .texto-agrega h2,
+    .texto-mostra h2 {
+        font-size: 25px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .texto-sobre p,
+    .texto-agrega p,
+    .texto-mostra p {
+        font-size: 16px;
+        line-height: 1.65;
+        text-align: left;
+    }
+
+    .video-section {
+        padding: 38px 18px;
+    }
+
+    .video-section h2 {
+        font-size: 25px;
+    }
+
+    .video-container {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .texto-sobre h2,
+    .texto-agrega h2,
+    .texto-mostra h2 {
+        font-size: 22px;
+    }
+
+    .texto-sobre p,
+    .texto-agrega p,
+    .texto-mostra p {
+        font-size: 15px;
+    }
+}
