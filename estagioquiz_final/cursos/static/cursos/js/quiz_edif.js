@@ -68,17 +68,21 @@ function atualizarProgresso() {
 
 function proximaQuestao() {
 
-    if (QuestaoAtual === 1) {
-        enviarEventoGA("quiz_iniciado", { curso: "edificacoes" });
-    }
-
     const opcaoSelecionada = document.querySelector(
         `input[name="q${QuestaoAtual}"]:checked`
     );
 
-    if (opcaoSelecionada) {
-        atribuirPontos(opcaoSelecionada.value);
+    if (!opcaoSelecionada) {
+        return;
     }
+
+    if (QuestaoAtual === 1) {
+        enviarEventoGA("quiz_iniciado", {
+            curso: "edificacoes"
+        });
+    }
+
+    atribuirPontos(opcaoSelecionada.value);
 
     document
         .querySelector(
