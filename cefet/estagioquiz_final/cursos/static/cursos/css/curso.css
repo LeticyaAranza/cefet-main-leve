@@ -1,0 +1,163 @@
+.pagina-curso {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 50px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.pagina-curso img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.pagina-curso div {
+    max-width: 500px;
+}
+
+.pagina-curso h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #003366;
+}
+
+---------------
+
+.o-que-aprende,
+.areas-atuacao {
+    padding: 60px 10%;
+}
+
+.texto-curso {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: justify;
+}
+
+.texto-curso h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #003366;
+}
+
+.texto-curso p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.video-info {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+    .pagina-curso {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .pagina-curso img {
+        width: 90%;
+    }
+
+    .texto-curso h2 {
+        font-size: 26px;
+    }
+
+    .texto-curso p {
+        font-size: 18px;
+    }
+
+}
+.pagina-curso img,
+.pagina-curso video {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .pagina-curso {
+        min-height: auto;
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+        padding: 30px 18px 36px;
+        text-align: left;
+        font-size: 17px;
+    }
+
+    .pagina-curso img,
+    .pagina-curso .video-info {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    .pagina-curso div {
+        width: 100%;
+        max-width: none;
+    }
+
+    .pagina-curso h1 {
+        margin-bottom: 14px;
+        font-size: 28px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .pagina-curso p {
+        line-height: 1.6;
+    }
+
+    .o-que-aprende,
+    .areas-atuacao {
+        padding: 38px 18px;
+    }
+
+    .texto-curso {
+        width: 100%;
+        text-align: left;
+    }
+
+    .texto-curso h2 {
+        font-size: 25px;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .texto-curso p {
+        font-size: 16px;
+        line-height: 1.65;
+        text-align: left;
+    }
+
+    .video-info {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .pagina-curso {
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 16px;
+    }
+
+    .pagina-curso h1,
+    .texto-curso h2 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,87 @@
+{% extends "cursos/base.html" %}
+{% load static %}
+
+{% block title %}Edificações{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cursos/css/curso.css' %}">
+<link rel="stylesheet" href="{% static 'cursos/css/quiz.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="pagina-curso">
+
+    <img src="{% static 'cursos/imagens/edif4.jpg' %}" alt="Edificações">
+
+    <div>
+
+        <h1>Curso de Edificações</h1>
+
+        <p>
+            O curso de Edificações forma profissionais capazes de atuar
+            em projetos, construção civil, desenho técnico
+            e planejamento de obras.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="o-que-aprende">
+
+    <div class="texto-curso">
+
+        <h2>O que se desenvolve em Edificações?</h2>
+
+            <p>
+                Ao longo do curso, você desenvolve conhecimentos técnicos e
+                gerenciais relacionados à construção civil. São trabalhados
+                conteúdos como sistemas construtivos, desenvolvimento de projetos,
+                desenho técnico, planejamento e acompanhamento de obras, orçamento,
+                materiais de construção, levantamentos topográficos e controle
+                da qualidade dos serviços e materiais.
+            </p>
+            
+            <p>
+                Além dos conhecimentos técnicos, o curso desenvolve habilidades
+                de planejamento, organização e coordenação de equipes. Você aprende
+                a acompanhar diferentes etapas de uma obra, realizar levantamentos
+                de materiais e custos e aplicar normas técnicas de segurança e
+                legislação relacionadas à construção civil.
+            </p>
+
+    </div>
+
+</section>
+
+<section class="areas-atuacao">
+
+    <div class="texto-curso">
+
+        <h2>Áreas para atuar depois de Edificações</h2>
+
+            <p>
+                A formação em Edificações permite atuar em diferentes setores da
+                construção civil. O profissional pode trabalhar em canteiros de
+                obras, empresas públicas e privadas de construção civil,
+                escritórios de projetos e construção, além de laboratórios
+                relacionados à análise de solos e materiais.
+            </p>
+            
+            <p>
+                Entre as atividades profissionais estão o desenvolvimento e
+                acompanhamento de projetos, planejamento e orçamento de obras,
+                levantamentos topográficos e de materiais, controle de qualidade,
+                manutenção de instalações e coordenação de equipes de trabalho.
+                Também é possível atuar na interface entre as áreas técnica e
+                administrativa da construção civil.
+            </p>
+
+    </div>
+
+</section>
+
+{% include "cursos/components/edif_quiz.html" with quiz_curso="edificacoes" %}
+
+{% endblock %}

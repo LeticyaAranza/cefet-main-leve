@@ -1,0 +1,29 @@
+<section class="chatbot" id="chatbot">
+
+    <h2>Tire suas dúvidas</h2>
+
+    <div class="chatbot-janela" id="chatbot-janela">
+
+        <div class="chatbot-mensagens" id="chatbot-mensagens">
+            <div class="chatbot-mensagem chatbot-mensagem--bot">
+                Olá! Sou o assistente virtual do CEFET-MG Varginha. Pode perguntar
+                sobre os cursos, o processo de ingresso ou a Mostra de Cursos.
+            </div>
+        </div>
+
+        <form id="chatbot-form" class="chatbot-form">
+            {% csrf_token %}
+            <input
+                type="text"
+                id="chatbot-input"
+                class="chatbot-input"
+                placeholder="Digite sua pergunta..."
+                autocomplete="off"
+                required
+            >
+            <button type="submit" class="chatbot-botao">Enviar</button>
+        </form>
+
+    </div>
+
+</section>

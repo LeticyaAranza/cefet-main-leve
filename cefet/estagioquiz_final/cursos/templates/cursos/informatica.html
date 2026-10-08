@@ -1,0 +1,97 @@
+{% extends "cursos/base.html" %}
+{% load static %}
+
+{% block title %}Informática{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cursos/css/curso.css' %}">
+<link rel="stylesheet" href="{% static 'cursos/css/quiz.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="pagina-curso">
+
+    <video class="video-info" controls>
+        <source src="{% static 'cursos/imagens/info.mp4' %}" type="video/mp4">
+    </video>
+
+    <div>
+
+        <h1>Curso de Informática</h1>
+
+        <p>
+            O curso técnico em Informática é voltado para quem gosta de tecnologia, 
+            criação e resolução de problemas. Durante a formação, 
+            você aprende a transformar ideias em soluções digitais, 
+            desenvolvendo projetos que envolvem programação, sistemas, sites e aplicativos. 
+            É uma oportunidade de conhecer diferentes áreas da tecnologia 
+            e se preparar para continuar os estudos ou ingressar no mercado de trabalho.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="o-que-aprende">
+
+    <div class="texto-curso">
+
+        <h2>O que se desenvolve em Informática?</h2>
+
+        <p>
+            Ao longo do curso, você desenvolve conhecimentos técnicos 
+            e habilidades que vão além de aprender a programar. 
+            São trabalhados conteúdos como algoritmos, estrutura de dados, 
+            linguagens de programação, banco de dados, redes de computadores, 
+            desenvolvimento web e segurança da informação.
+        </p>
+
+        <p>
+            Além disso, o curso estimula o raciocínio lógico, a criatividade, 
+            a capacidade de resolver problemas e o pensamento crítico. 
+            Os trabalhos e projetos em grupo também ajudam a desenvolver 
+            comunicação, organização e colaboração, habilidades importantes 
+            tanto na escola quanto no ambiente profissional.
+        </p>
+
+
+    </div>
+
+</section>
+
+<section class="areas-atuacao">
+
+    <div class="texto-curso">
+
+        <h2>Áreas para atuar depois de Informática</h2>
+
+        <p>
+            A formação em Informática permite seguir diferentes 
+            caminhos dentro da área de tecnologia. Você pode trabalhar 
+            com desenvolvimento de sistemas e aplicativos, criação de sites, 
+            banco de dados, redes, suporte técnico, infraestrutura 
+            e segurança da informação.
+        </p>
+
+        <p>
+           Entre as possibilidades profissionais estão programador(a), 
+           desenvolvedor(a) de software, analista de sistemas, 
+           administrador(a) de banco de dados, técnico(a) em redes, 
+           analista de segurança da informação, web designer e 
+           analista de suporte técnico.
+        </p>
+
+        <p>
+            Além dessas áreas, conhecimentos em Informática 
+            também podem abrir portas para campos que estão crescendo, 
+            como ciência de dados, computação em nuvem e inteligência artificial.
+        </p>
+
+    </div>
+
+</section>
+
+{% include "cursos/components/info_quiz.html" with quiz_curso="informatica" %}
+
+{% endblock %}

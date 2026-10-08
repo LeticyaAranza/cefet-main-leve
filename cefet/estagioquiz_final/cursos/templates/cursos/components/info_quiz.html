@@ -1,0 +1,247 @@
+{% load static %}
+
+<section class="quiz">
+    <h2>Descubra sua Área voltada para Informática</h2>
+
+    <div class="subtitulo">
+        Responda às situações abaixo para encontrar um caminho relacionado com o seu perfil!
+    </div>
+
+    <div class="container-quiz">
+
+        <div class="barra-progresso">
+            <div class="progresso-preenchido" id="progresso-preenchido"></div>
+        </div>
+
+        <form id="quiz-form">
+
+            <!-- Questão 1 -->
+            <div class="container-questao active" data-question="1">
+                <div class="titulo-questao">
+                    1. Quando você joga no computador/celular ou usa um aplicativo novo, o que mais prende a sua atenção?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="dev">
+                        <span>Fico imaginando como as telas foram desenhadas, os botões programados e como o app funciona por dentro.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="sec_db">
+                        <span>Fico curioso sobre como o jogo não trava, onde os dados dos jogadores ficam salvos e se dá para burlar o sistema ou achar bugs.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="net_hw">
+                        <span>Presto muita atenção na parte gráfica, na conexão de internet para não dar lag e no desempenho do meu aparelho.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="ai">
+                        <span>Gosto de entender como as regras do jogo foram pensadas, como a inteligência dos personagens funciona e as estatísticas de pontuação.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="gestao">
+                        <span>Fico pensando em como organizar melhor as atualizações, o trabalho da equipe que criou e como planejar os próximos lançamentos.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 2 -->
+            <div class="container-questao" data-question="2">
+
+                <div class="titulo-questao">
+                    2. Se te dessem uma tarde livre para resolver um "problema técnico" na sua casa ou na escola, qual você escolheria?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="hw">
+                        <span>Desmontar um computador antigo, trocar peças, limpar a placa-mãe e formatar o sistema operacional para rodar mais rápido.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="net">
+                        <span>Configurar o roteador de casa, arrumar os cabos da internet e resolver o problema do Wi-Fi que não pega direito nos quartos.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="dev_devops">
+                        <span>Criar um sisteminha simples no computador para automatizar alguma tarefa chata que todo mundo faz na mão (como organizar arquivos).</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="iot">
+                        <span>Conectar sensores, luzes ou plaquinhas inteligentes (como Arduino) para fazer alguma automação física no quarto.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="gestao">
+                        <span>Organizar um grupo de amigos, dividir as tarefas de um trabalho escolar em etapas e garantir que todo mundo entregue no prazo.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 3 -->
+            <div class="container-questao" data-question="3">
+
+                <div class="titulo-questao">
+                    3. Qual dessas situações mais se parece com a forma como você gosta de aprender ou resolver desafios?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="dev">
+                        <span>Tentativa e erro: gosto de fuçar em códigos, testar linhas de comando e ver a tela mudar na hora.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="sec_db">
+                        <span>Investigação: gosto de procurar pistas, analisar relatórios, caçar erros escondidos e entender a raiz de um problema complexo.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="hw_iot">
+                        <span>Experimentação prática: gosto de mexer com as mãos, testar ferramentas físicas, soldar, ligar cabos ou montar coisas do zero.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="cloud_devops">
+                        <span>Visão geral e estratégia: gosto de entender como as coisas grandes funcionam juntas (como a nuvem, servidores e múltiplos sistemas conversando).</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="ai">
+                        <span>Análise de padrões: gosto de olhar planilhas gigantes, gráficos, números e tentar prever o que vai acontecer com base nesses dados.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 4 -->
+            <div class="container-questao" data-question="4">
+
+                <div class="titulo-questao">
+                    4. Como você prefere que seja o seu ambiente de trabalho ou estudo no futuro?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="dev_cloud">
+                        <span>Um lugar 100% digital, onde eu possa criar softwares, sites ou sistemas de qualquer lugar do mundo apenas com meu notebook.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="support_gestao">
+                        <span>Um ambiente dinâmico onde eu precise interagir bastante com pessoas, ajudando usuários a resolver problemas cotidianos ou liderando equipes.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="net_hw_iot">
+                        <span>Um espaço que misture tecnologia com o mundo físico: laboratórios, servidores, bancadas de testes ou infraestrutura real.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="sec">
+                        <span>Um escritório focado em estratégia, segurança digital e proteção de informações contra riscos externos.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="ai">
+                        <span>Um ambiente focado em inovação, laboratório de dados e criação de tecnologias inteligentes que aprendem sozinhas.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 5 -->
+            <div class="container-questao" data-question="5">
+
+                <div class="titulo-questao">
+                    5. O que mais te daria orgulho de ver pronto daqui a alguns anos?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="dev">
+                        <span>Ver um aplicativo, site ou jogo que eu ajudei a criar sendo usado por milhares de pessoas no celular delas.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="net_cloud_devops">
+                        <span>Saber que ajudei a manter a internet e os servidores de uma grande empresa firmes, rápidos e sem cair nunca.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="ai_db">
+                        <span>Descobrir que minhas análises de dados ou modelos inteligentes ajudaram uma empresa a tomar a decisão certa ou prever um problema.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="sec">
+                        <span>Saber que criei barreiras tão fortes que livrei uma empresa de sofrer um ataque cibernético desastroso.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="iot_hw">
+                        <span>Ver um projeto físico ou uma máquina inteligente conectada à internet funcionando perfeitamente no mundo real por causa do meu trabalho.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Botão -->
+            <div class="container-botao">
+                <button type="button" id="next-btn" disabled>
+                    Avançar
+                </button>
+            </div>
+
+        </form>
+
+
+        <!-- Resultado -->
+        <div id="container-resultado">
+
+            <h2>Seu Resultado está Pronto!</h2>
+
+            <p>
+                Com base nas suas respostas, a área que mais combina com o seu perfil é:
+            </p>
+
+            <div class="caixa-resultado">
+
+                <h3 id="result-title">
+                    Área Principal
+                </h3>
+
+                <p id="result-description">
+                    Descrição detalhada da área combinada com o seu perfil.
+                </p>
+
+            </div>
+
+        <button type="button" id="restart-btn">
+            Refazer Quiz
+        </button>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="{% static 'cursos/js/quiz_info.js' %}"></script>

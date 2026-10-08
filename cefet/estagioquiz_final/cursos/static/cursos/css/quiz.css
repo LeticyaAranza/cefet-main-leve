@@ -1,0 +1,276 @@
+
+.quiz {
+    padding: 60px 10%;
+}
+
+.quiz h2 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.quiz .subtitulo {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container-quiz {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.progresso-preenchido {
+    height: 100%;
+    width: 0%;
+    background-color: #003366;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.container-questao {
+    display: none;
+}
+
+.container-questao.active {
+    display: block;
+}
+
+.titulo-questao {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rotulo-opcao {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: 0.2s;
+}
+
+.rotulo-opcao:hover {
+    border-color: #003366;
+    background-color: #f5f7fa;
+}
+
+.rotulo-opcao input {
+    margin-top: 3px;
+    accent-color: #003366;
+}
+
+.container-botao {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quiz button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.quiz button:hover {
+    background-color: #00264d;
+}
+
+.quiz button:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+#container-resultado,
+#meca-result-container {
+    display: none;
+    text-align: center;
+}
+
+#container-resultado h2,
+#meca-result-container h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+#container-resultado > p,
+#meca-result-container > p {
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.caixa-resultado {
+    background-color: #f8fafc;
+    border: 2px solid #003366;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.caixa-resultado h3 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.caixa-resultado p {
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .quiz {
+        padding: 40px 5%;
+    }
+
+    .quiz h2 {
+        font-size: 26px;
+    }
+
+    .container-quiz {
+        padding: 20px;
+    }
+
+    .titulo-questao {
+        font-size: 16px;
+    }
+
+    .rotulo-opcao {
+        padding: 12px;
+    }
+
+    .quiz button {
+        width: 100%;
+    }
+}
+
+.quiz,
+.container-quiz,
+.rotulo-opcao,
+.titulo-questao {
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .quiz {
+        width: 100%;
+        padding: 35px 12px;
+    }
+
+    .quiz h2 {
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    .quiz .subtitulo {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .container-quiz {
+        width: 100%;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .barra-progresso {
+        margin-bottom: 20px;
+    }
+
+    .titulo-questao {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    .lista-opcoes {
+        gap: 9px;
+    }
+
+    .rotulo-opcao {
+        width: 100%;
+        padding: 12px 10px;
+        gap: 8px;
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .rotulo-opcao input {
+        flex: 0 0 auto;
+        margin-top: 4px;
+    }
+
+    .container-botao {
+        margin-top: 20px;
+    }
+
+    .quiz button {
+        width: 100%;
+        min-height: 46px;
+        padding: 11px 16px;
+    }
+
+    .caixa-resultado {
+        padding: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    #container-resultado h2,
+    #meca-result-container h2 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: 380px) {
+    .quiz {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .container-quiz {
+        padding: 13px;
+    }
+
+    .titulo-questao {
+        font-size: 15px;
+    }
+
+    .rotulo-opcao {
+        font-size: 14px;
+    }
+}
